@@ -6,7 +6,7 @@ from pathlib import Path
 from loguru import logger
 from dotenv import load_dotenv
 import re
-from app.models import generate_bert_suggestions
+from app.models import generate_bert_suggestions, filter_positive_suggestions
 
 # Load environment variables
 load_dotenv()
@@ -65,7 +65,7 @@ async def custom_404_handler(request: Request, exc: HTTPException) -> HTMLRespon
         logger.warning(f"404 error encountered: {request.url}")
 
     return templates.TemplateResponse(
-        "error.html", {"request": request}, status_code=status.HTTP_404_NOT_FOUND
+        "error.html", {"request": request}, status_code=404
     )
 
 
@@ -99,14 +99,20 @@ async def get_suggestions(text: str = Form(...)) -> JSONResponse:
     masked_text = text.replace("<blank>", "[MASK]")
 
     # Get suggestions using the BERT model
-    suggestions = generate_bert_suggestions(masked_text, top_k=3)
+    # suggestions = generate_bert_suggestions(masked_text, top_k=3)
+    suggestions = generate_bert_suggestions(masked_text, top_k=10)
 
     # Remove spaces beetwen words
     suggestions = [suggestion.replace(" ", "") for suggestion in suggestions]
 
     logger.info(f"Returning suggestions: {suggestions}")
 
-    return JSONResponse({"suggestions": suggestions})
+    # Filter suggestions to keep only the positive ones
+    positive_suggestions = filter_positive_suggestions(suggestions)
+
+    logger.info(f"Returning filtered suggestions: {positive_suggestions}")
+
+    return JSONResponse({"suggestions": positive_suggestions[:5]})
 
 
 # Custom 400 error handler
