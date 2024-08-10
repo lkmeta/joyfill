@@ -6,6 +6,7 @@ from pathlib import Path
 from loguru import logger
 from dotenv import load_dotenv
 import re
+from app.models import generate_bert_suggestions
 
 # Load environment variables
 load_dotenv()
@@ -59,14 +60,18 @@ async def custom_404_handler(request: Request, exc: HTTPException) -> HTMLRespon
         HTMLResponse: The response containing the rendered error.html template.
     """
     logger.warning(f"404 error encountered: {request.url}")
+    # Skip logging for favicon.ico requests
+    if "favicon.ico" not in str(request.url):
+        logger.warning(f"404 error encountered: {request.url}")
+
     return templates.TemplateResponse(
-        "error.html", {"request": request}, status_code=404
+        "error.html", {"request": request}, status_code=status.HTTP_404_NOT_FOUND
     )
 
 
 # Function to validate the input format
 def validate_input_format(text: str) -> bool:
-    pattern = r"\b\w*\b\s*<blank>\s*\b\w*\b"
+    pattern = r"\b\w*\b\s*<blank>\s*\b\w*\b|\b\w+\s*<blank>\s*|\s*<blank>\s*\b\w+\b"
     return bool(re.search(pattern, text))
 
 
@@ -78,6 +83,11 @@ async def get_suggestions(text: str = Form(...)) -> JSONResponse:
     """
     logger.info(f"Received input text: {text}")
 
+    # Remove multiple spaces and leading/trailing spaces
+    text = re.sub(r"\s+", " ", text).strip()
+
+    # logger.info(f"Processed input text: {text}")
+
     # Validate the input format
     if not validate_input_format(text):
         raise HTTPException(
@@ -85,12 +95,16 @@ async def get_suggestions(text: str = Form(...)) -> JSONResponse:
             detail="Invalid format. Please use the format 'word <blank> word'.",
         )
 
-    # Placeholder for NLP processing and sentiment filtering
-    suggestions: list[str] = [
-        "good",
-        "excellent",
-        "amazing",
-    ]  # Replace this with actual NLP model output
+    # Replace <blank> with [MASK] for BERT model
+    masked_text = text.replace("<blank>", "[MASK]")
+
+    # Get suggestions using the BERT model
+    suggestions = generate_bert_suggestions(masked_text, top_k=3)
+
+    # Remove spaces beetwen words
+    suggestions = [suggestion.replace(" ", "") for suggestion in suggestions]
+
+    logger.info(f"Returning suggestions: {suggestions}")
 
     return JSONResponse({"suggestions": suggestions})
 
