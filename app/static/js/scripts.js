@@ -42,6 +42,7 @@ function moveCursorToEnd(el) {
 function clearInput() {
     inputField.innerHTML = '';
     suggestionsDiv.innerHTML = '';
+    inputField.setAttribute('data-placeholder', 'Type your sentence here...');
 }
 
 // Function to fetch suggestions from the server
@@ -59,7 +60,12 @@ function fetchSuggestions() {
                 text: text
             })
         })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(err => { throw new Error(err.detail); });
+                }
+                return response.json();
+            })
             .then(data => {
                 if (data.suggestions && data.suggestions.length > 0) {
                     const suggestionHTML = data.suggestions.map(suggestion =>
@@ -70,8 +76,8 @@ function fetchSuggestions() {
                     suggestionsDiv.innerHTML = '<p class="loading">No suggestions available.</p>';
                 }
             })
-            .catch(() => {
-                suggestionsDiv.innerHTML = '<p class="loading">Error fetching suggestions.</p>';
+            .catch(error => {
+                suggestionsDiv.innerHTML = `<p class="loading">${error.message}</p>`;
             });
     } else {
         suggestionsDiv.innerHTML = '<p class="loading">Please add a blank to get suggestions.</p>';
