@@ -1,0 +1,211 @@
+2024-08-10 18:52:51.294 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 18:52:51.674 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 18:53:10.405 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> a
+2024-08-10 18:53:10.406 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:10.419 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> as
+2024-08-10 18:53:10.422 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:10.433 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd
+2024-08-10 18:53:10.434 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:12.444 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd a
+2024-08-10 18:53:12.445 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:12.528 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd as
+2024-08-10 18:53:12.528 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:12.635 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asd
+2024-08-10 18:53:12.636 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:13.242 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asda
+2024-08-10 18:53:13.243 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:13.257 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdas
+2024-08-10 18:53:13.258 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:13.821 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdass
+2024-08-10 18:53:13.822 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:14.417 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdasss
+2024-08-10 18:53:14.418 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:15.190 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdassss
+2024-08-10 18:53:15.191 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:16.053 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdasssss
+2024-08-10 18:53:16.055 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:20.001 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdassssss
+2024-08-10 18:53:20.003 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:21.146 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdasssssss
+2024-08-10 18:53:21.148 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:53:21.861 | DEBUG    | app.main:get_suggestions:52 - Received input text:  dasd  <blank> asd asdassssssss
+2024-08-10 18:53:21.862 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:54:04.541 | WARNING  | app.main:custom_404_handler:76 - 404 error encountered: http://localhost:5000/e
+2024-08-10 18:55:13.808 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank>
+2024-08-10 18:55:13.809 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:15.899 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> d
+2024-08-10 18:55:15.900 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:15.914 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> de
+2024-08-10 18:55:15.916 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:16.867 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> dee
+2024-08-10 18:55:16.868 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:17.423 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> deee
+2024-08-10 18:55:17.425 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:18.336 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> deeee
+2024-08-10 18:55:18.337 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:19.937 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> deeeee
+2024-08-10 18:55:19.938 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:20.833 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> deeeeee
+2024-08-10 18:55:20.834 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:21.420 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> deeeeeee
+2024-08-10 18:55:21.420 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:55:22.532 | DEBUG    | app.main:get_suggestions:52 - Received input text: deasad  <blank> deeeeeeee
+2024-08-10 18:55:22.532 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:58:24.823 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 18:58:36.469 | WARNING  | app.main:custom_404_handler:76 - 404 error encountered: http://localhost:5000/e
+2024-08-10 18:58:43.975 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 18:58:50.683 | DEBUG    | app.main:get_suggestions:52 - Received input text: sdf  <blank> s
+2024-08-10 18:58:50.684 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:58:50.761 | DEBUG    | app.main:get_suggestions:52 - Received input text: sdf  <blank> sd
+2024-08-10 18:58:50.762 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:00.678 | DEBUG    | app.main:get_suggestions:52 - Received input text: sdf  good sd  <blank> s
+2024-08-10 18:59:00.679 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:00.692 | DEBUG    | app.main:get_suggestions:52 - Received input text: sdf  good sd  <blank> sd
+2024-08-10 18:59:00.711 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:15.727 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a
+2024-08-10 18:59:15.728 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:16.670 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a
+2024-08-10 18:59:16.670 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:17.465 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a
+2024-08-10 18:59:17.466 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:18.109 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a
+2024-08-10 18:59:18.109 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:19.169 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a a
+2024-08-10 18:59:19.169 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:19.910 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a a a
+2024-08-10 18:59:19.911 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:20.506 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a a a a
+2024-08-10 18:59:20.506 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:21.250 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a a a a a
+2024-08-10 18:59:21.251 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:21.945 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a a a a a a
+2024-08-10 18:59:21.945 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:23.020 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a a a a a a a
+2024-08-10 18:59:23.020 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 18:59:25.899 | DEBUG    | app.main:get_suggestions:52 - Received input text: mach e  <blank> a a a a a a a a a a a
+2024-08-10 18:59:25.900 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:01:03.157 | DEBUG    | app.main:get_suggestions:52 - Received input text:  asd as <blank> a
+2024-08-10 19:01:03.157 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:01:03.179 | DEBUG    | app.main:get_suggestions:52 - Received input text:  asd as <blank> as
+2024-08-10 19:01:03.188 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:02:54.227 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:03:03.582 | DEBUG    | app.main:get_suggestions:52 - Received input text:  as a   <blank> a
+2024-08-10 19:03:03.583 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:03:20.816 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:03:25.384 | DEBUG    | app.main:get_suggestions:52 - Received input text:  as as  <blank> a
+2024-08-10 19:03:25.386 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:03:25.480 | DEBUG    | app.main:get_suggestions:52 - Received input text:  as as  <blank> as
+2024-08-10 19:03:25.480 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:05:33.351 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:05:44.390 | DEBUG    | app.main:get_suggestions:52 - Received input text: das asd  <blank> 
+2024-08-10 19:05:44.391 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:05:55.593 | DEBUG    | app.main:get_suggestions:52 - Received input text: das asd  excellent  asd  <blank> 
+2024-08-10 19:05:55.594 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:05:57.314 | DEBUG    | app.main:get_suggestions:52 - Received input text: das asd  excellent  asd  <blank>
+2024-08-10 19:05:57.315 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:06:04.001 | DEBUG    | app.main:get_suggestions:52 - Received input text: das asd  excellent  asd  <blank> a
+2024-08-10 19:06:04.002 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:06:05.826 | DEBUG    | app.main:get_suggestions:52 - Received input text: das asd  excellent  asd  <blank> 
+2024-08-10 19:06:05.827 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:06:06.427 | DEBUG    | app.main:get_suggestions:52 - Received input text: das asd  excellent  asd  <blank>
+2024-08-10 19:06:06.429 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:06:09.267 | DEBUG    | app.main:get_suggestions:52 - Received input text: das asd  excellent  asd  <blank>
+2024-08-10 19:06:09.268 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:06:13.686 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:07:18.841 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> 
+2024-08-10 19:07:18.842 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:22.775 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> e
+2024-08-10 19:07:22.775 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:23.527 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> e e
+2024-08-10 19:07:23.528 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:27.322 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  excellent e e  <blank> e
+2024-08-10 19:07:27.322 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:34.037 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e
+2024-08-10 19:07:34.038 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:38.035 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e e
+2024-08-10 19:07:38.036 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:38.842 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e e e
+2024-08-10 19:07:38.843 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:39.596 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e e e e
+2024-08-10 19:07:39.597 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:40.335 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e e e e e
+2024-08-10 19:07:40.336 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:41.072 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e e e e e e
+2024-08-10 19:07:41.072 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:43.189 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e e e e e e e
+2024-08-10 19:07:43.191 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:43.706 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e e e e e e e e
+2024-08-10 19:07:43.707 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:07:53.059 | DEBUG    | app.main:get_suggestions:52 - Received input text: ads  <blank>  1
+2024-08-10 19:07:53.060 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:10:01.577 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:10:09.464 | DEBUG    | app.main:get_suggestions:52 - Received input text: asd  <blank> a
+2024-08-10 19:10:09.464 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:10:44.962 | DEBUG    | app.main:get_suggestions:52 - Received input text: ed  <blank> e
+2024-08-10 19:10:44.963 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:11:30.593 | WARNING  | app.main:custom_404_handler:76 - 404 error encountered: http://localhost:5000/1
+2024-08-10 19:11:35.793 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:12:04.992 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:12:24.807 | DEBUG    | app.main:get_suggestions:52 - Received input text: aasd as <blank> 
+2024-08-10 19:12:24.808 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:12:25.746 | DEBUG    | app.main:get_suggestions:52 - Received input text: aasd as <blank> e 
+2024-08-10 19:12:25.748 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:12:34.393 | DEBUG    | app.main:get_suggestions:52 - Received input text: aasd as <blank> e amazing a
+2024-08-10 19:12:34.393 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:12:34.420 | DEBUG    | app.main:get_suggestions:52 - Received input text: aasd as <blank> e amazing as
+2024-08-10 19:12:34.421 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:12:35.460 | DEBUG    | app.main:get_suggestions:52 - Received input text: aasd as <blank> e amazing a
+2024-08-10 19:12:35.461 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:12:36.366 | DEBUG    | app.main:get_suggestions:52 - Received input text: aasd as <blank> e amazing
+2024-08-10 19:12:36.367 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:12:59.780 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:14:57.727 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:15:03.404 | DEBUG    | app.main:get_suggestions:52 - Received input text: 123  <blank> e
+2024-08-10 19:15:03.405 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:15:16.190 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:15:30.617 | DEBUG    | app.main:get_suggestions:52 - Received input text: have a  <blank> d
+2024-08-10 19:15:30.618 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:15:31.185 | DEBUG    | app.main:get_suggestions:52 - Received input text: have a  <blank> da
+2024-08-10 19:15:31.186 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:15:31.486 | DEBUG    | app.main:get_suggestions:52 - Received input text: have a  <blank> day
+2024-08-10 19:15:31.486 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:15:51.074 | DEBUG    | app.main:get_suggestions:52 - Received input text: have a  <blank> day
+2024-08-10 19:15:51.075 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:17:17.574 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:17:31.720 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:17:44.152 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:19:45.421 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:21:32.883 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:21:51.516 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:21:53.640 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:23:26.998 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:23:58.668 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> <blank>  <blank>  <blank> ,
+2024-08-10 19:23:58.672 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:23:59.400 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> <blank>  <blank>  <blank> 
+2024-08-10 19:23:59.401 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:24:00.613 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> <blank>  <blank>  <blank> 
+2024-08-10 19:24:00.614 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:25:33.916 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:25:43.357 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> e
+2024-08-10 19:25:43.360 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:25:55.700 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> e
+2024-08-10 19:25:55.701 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:25:59.874 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> e
+2024-08-10 19:25:59.875 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:27:36.924 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:27:43.429 | DEBUG    | app.main:get_suggestions:52 - Received input text: q123  <blank> 
+2024-08-10 19:27:43.430 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:30:23.556 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:30:28.466 | DEBUG    | app.main:get_suggestions:52 - Received input text: 123  <blank> 1
+2024-08-10 19:30:28.467 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:30:44.763 | DEBUG    | app.main:get_suggestions:52 - Received input text: <blank>
+2024-08-10 19:30:44.763 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:33:02.929 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:33:06.972 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> w
+2024-08-10 19:33:06.973 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:33:15.779 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:33:19.323 | DEBUG    | app.main:get_suggestions:52 - Received input text: hi  <blank> e
+2024-08-10 19:33:19.324 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']
+2024-08-10 19:34:10.867 | INFO     | app.main:read_form:36 - Rendering the main form page.
+2024-08-10 19:34:13.762 | DEBUG    | app.main:get_suggestions:52 - Received input text: 123  <blank> 1
+2024-08-10 19:34:13.763 | INFO     | app.main:get_suggestions:60 - Suggestions generated: ['good', 'excellent', 'amazing']

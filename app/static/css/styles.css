@@ -1,0 +1,174 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;
+    /* Prevent window from shifting or resizing */
+}
+
+/* Main container styling */
+.container {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Application title styling */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+h1 span {
+    color: #1abc9c;
+    /* Accent color */
+}
+
+/* Description styling */
+.description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+/* Input group styling */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenteditable div styling */
+.editable {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #2c3e50;
+    min-height: 40px;
+    outline: none;
+    white-space: nowrap;
+    position: relative;
+}
+
+.editable:empty:before {
+    content: attr(data-placeholder);
+    color: #bdc3c7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.clear-button,
+.add-blank-button,
+.refresh-button {
+    flex-grow: 1;
+    padding: 0.75rem;
+    background-color: #1abc9c;
+    /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and active states for buttons */
+.clear-button:hover,
+.add-blank-button:hover,
+.refresh-button:hover {
+    background-color: #16a085;
+}
+
+.clear-button:active,
+.add-blank-button:active,
+.refresh-button:active {
+    transform: scale(0.98);
+}
+
+/* Suggestions area styling */
+.suggestions {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: #2ecc71;
+}
+
+/* Styling for suggestion words */
+.suggestions span {
+    cursor: pointer;
+    color: #27ae60;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.suggestions span:hover {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    /* Underscore transition effect */
+}
+
+/* Styling for the inserted word */
+.highlighted {
+    color: #e74c3c;
+    /* Different color for the inserted word */
+    font-weight: 600;
+    /* Bold to stand out */
+    background-color: #fce4ec;
+    /* Light background for emphasis */
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Loading text styling */
+.loading {
+    color: #95a5a6;
+    /* Use a neutral color for loading text */
+}
+
+/* Error page link styling */
+.home-link {
+    text-decoration: none;
+    color: #1abc9c;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+    background-color: #ecf0f1;
+}

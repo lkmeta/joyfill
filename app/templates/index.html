@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoyFill - Positive Suggestions</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <!-- Main container for the form and suggestions -->
+    <div class="container">
+        <!-- Application title -->
+        <h1>Joy<span>Fill</span></h1>
+        <!-- Short description about the app -->
+        <p class="description">Enhance your sentences with positive suggestions.</p>
+
+        <!-- Form for input and buttons -->
+        <form id="suggestion-form" onsubmit="return false;">
+            <div class="input-group">
+                <!-- Contenteditable div for the sentence -->
+                <div id="text-input" class="editable" contenteditable="true"
+                    data-placeholder="Type your sentence here..."></div>
+
+                <!-- Button group for actions -->
+                <div class="button-group">
+                    <button type="button" class="clear-button" onclick="clearInput()">Clear</button>
+                    <button type="button" class="add-blank-button" onclick="addBlank()">Add Blank</button>
+                    <button type="button" class="refresh-button" onclick="fetchSuggestions()">Refresh</button>
+                </div>
+            </div>
+            <!-- Area to display suggestions -->
+            <div class="suggestions" id="suggestions"></div>
+        </form>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="/static/js/scripts.js"></script>
+</body>
+
+</html>

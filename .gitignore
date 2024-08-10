@@ -1,0 +1,20 @@
+# Pycache files
+__pycache__/
+
+
+# VS Code specific
+.vscode/
+
+# Everything inside the output directory
+# output/*
+
+# Environments
+.env
+
+# Current Tests directory
+tests/
+test.txt
+
+# Logs
+logs/
+*.log
