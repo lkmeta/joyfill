@@ -24,9 +24,7 @@
 - [Models Used](#models-used)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-  - [Clone the Repository](#clone-the-repository)
-  - [Docker Setup](#docker-setup)
-  - [Accessing the Application](#accessing-the-application)
+- [Monitoring](#monitoring)
 - [Authentication](#authentication)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
@@ -87,6 +85,23 @@ After starting the application, you can access it at:
 ```bash
 http://localhost:5000
 ```
+
+## Monitoring
+
+To monitor and view the logs of your running Docker container:
+
+1. Use the following command to list all running Docker containers:
+
+   ```bash
+   docker ps
+   ```
+
+2. To view the live logs of a specific container, use:
+
+    ```bash
+    docker logs -f <container_id_or_name>
+    ```
+Replace `<container_id_or_name>` with the actual container ID or name obtained from the previous command.
 
 ## Authentication
 The current authentication mechanism follows OAuth2 standards. However, for testing and this phase of development, you can use the following credentials:
