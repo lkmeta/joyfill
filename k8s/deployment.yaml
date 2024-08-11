@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: joyfill-app
+  labels:
+    app: joyfill-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: joyfill-app
+  template:
+    metadata:
+      labels:
+        app: joyfill-app
+    spec:
+      containers:
+      - name: joyfill-app
+        image: joyfill-app:latest  
+        imagePullPolicy: IfNotPresent  # Ensure Kubernetes uses the local image if available
+        ports:
+        - containerPort: 5000 
+      restartPolicy: Always
