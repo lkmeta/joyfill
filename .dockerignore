@@ -7,8 +7,8 @@ env/
 *.env
 
 # Ignore Docker-related files
-Dockerfile
-docker-compose.yml
+# Dockerfile
+# docker-compose.yml
 
 # Ignore log files
 logs/
@@ -16,7 +16,7 @@ logs/
 
 # Ignore other unnecessary files
 *.md
-*.txt
+# *.txt
 .DS_Store
 .idea/
 .vscode/
