@@ -4,12 +4,9 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from loguru import logger
-from dotenv import load_dotenv
 import re
 from app.models import generate_bert_suggestions, filter_positive_suggestions
 
-# Load environment variables
-load_dotenv()
 
 # Define base directories using pathlib
 BASE_DIR = Path(__file__).resolve().parent

@@ -1,20 +1,19 @@
-# Pycache files
+# Ignore Python cache files
 __pycache__/
+*.pyc
 
-
-# VS Code specific
-.vscode/
-
-# Everything inside the output directory
-# output/*
-
-# Environments
+# Ignore virtual environments
+venv/
 .env
 
-# Current Tests directory
-tests/
-test.txt
-
-# Logs
+# Ignore logs
 logs/
-*.log
+
+# Ignore other unnecessary files
+.DS_Store
+
+# Ignore tests for now
+test.txt
+tests/
+
+
