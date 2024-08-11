@@ -1,6 +1,9 @@
-python-multipart
+python-multipart==0.0.5
 fastapi==0.112.0
 loguru==0.7.2
 torch==2.4.0
 transformers==4.44.0
 uvicorn==0.15.0
+bcrypt==3.2.0
+passlib==1.7.4
+python-jose
