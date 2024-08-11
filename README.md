@@ -29,7 +29,7 @@
   - [Accessing the Application](#accessing-the-application)
 - [Authentication](#authentication)
 - [Usage](#usage)
-- [Testing)](#testing)
+- [Testing](#testing)
 - [License](#license)
 
 ## About
