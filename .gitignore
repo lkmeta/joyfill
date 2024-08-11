@@ -14,6 +14,7 @@ logs/
 
 # Ignore tests for now
 test.txt
-tests/
+# tests/
 
-
+# K8s folder
+k8s/
