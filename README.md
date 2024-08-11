@@ -29,6 +29,7 @@
   - [Accessing the Application](#accessing-the-application)
 - [Authentication](#authentication)
 - [Usage](#usage)
+- [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [License](#license)
 
@@ -97,27 +98,31 @@ The current authentication mechanism follows OAuth2 standards. However, for test
 
 ## Usage
 
-1. **Open the Application**: After completing the installation, open your web browser and navigate to `http://localhost:5000` to access JoyFill.
+1. After completing the installation, open your web browser and navigate to `http://localhost:5000` to access JoyFill.
+2. Log in with the credentials: `testuser` (username) and `testpassword` (password).
+3. Enter a sentence with `<blank>` where you want suggestions, or click "Add Blank."
+4. Suggestions are generated as you type, but ensure `<blank>` is included in the input.
+5. Click "Refresh" to manually update the suggestions.
+6. Click a suggestion to replace the `<blank>` with the chosen word.
+7. Click "Clear" to reset the sentence.
 
-2. **Log In**: Use the provided credentials (Username: `testuser`, Password: `testpassword`) to log in.
+**Note:** Only 5 suggestions are shown at a time to keep the UI clean.
 
-3. **Enter a Sentence**: Type a sentence with a `<blank>` placeholder where you want suggestions, or click "Add Blank" to insert it automatically.
 
-4. **Get Suggestions**: Suggestions are calculated dynamically with every new character you type, but ensure your input includes the `<blank>` placeholder to start generating suggestions.
+## API Documentation
 
-5. **Refresh Suggestions**: Click the "Refresh" button to manually refresh and update the suggestions.
+JoyFill is built using FastAPI, which automatically generates interactive API documentation.  
+Once the application is running, you can access the API documentation at:
 
-6. **Replace the Blank**: Click on a suggestion to replace the `<blank>` placeholder with the chosen word.
 
-7. **Clear the Sentence**: Click the "Clear" button to remove the sentence and start over.
-
-**Note:**
-On the UI, a maximum of 5 positive suggestions will be displayed to ensure the interface remains clean and easy to use.
-
+```bash
+http://localhost:5000/docs
+```
 
 ## Testing
 
-To perform load testing and benchmark the performance of the JoyFill application, Locust can be used. The `locustfile.py` is located inside the `tests` directory.
+To perform load testing and benchmark the performance of the JoyFill application, Locust can be used.   
+The `locustfile.py` is located inside the `tests` directory.
 
 ### Steps to Run Locust Tests
 
