@@ -8,15 +8,12 @@ env/
 
 # Ignore Docker-related files
 # Dockerfile
-# docker-compose.yml
 
 # Ignore log files
 logs/
 *.log
 
 # Ignore other unnecessary files
-*.md
-# *.txt
 .DS_Store
 .idea/
 .vscode/
@@ -24,7 +21,6 @@ logs/
 
 # Ignore git-related files and directories
 .git/
-.gitignore
 
 # Ignore compiled files
 *.so
@@ -34,4 +30,4 @@ logs/
 *.exe
 
 # Ignore test directories
-tests/
+# tests/
