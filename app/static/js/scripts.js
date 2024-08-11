@@ -1,3 +1,39 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("auth-form");
+    const suggestionForm = document.getElementById("suggestion-form");
+    const loginError = document.getElementById("login-error");
+    const loginDiv = document.getElementById("login-form");
+
+    // Handle login form submission
+    loginForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const response = await fetch("/token", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams({
+                username: username,
+                password: password
+            })
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            localStorage.setItem("token", data.access_token);
+            loginDiv.style.display = "none";
+            suggestionForm.style.display = "block";
+        } else {
+            loginError.style.display = "block";
+        }
+    });
+
+
+});
+
 // Reference to the contenteditable div and suggestions div
 const inputField = document.getElementById('text-input');
 const suggestionsDiv = document.getElementById('suggestions');
@@ -43,11 +79,25 @@ function clearInput() {
     inputField.innerHTML = '';
     suggestionsDiv.innerHTML = '';
     inputField.setAttribute('data-placeholder', 'Type your sentence here...');
+    moveCursorToEnd(inputField);
 }
 
 // Function to fetch suggestions from the server
 function fetchSuggestions() {
     const text = inputField.innerText;
+
+    // Simple validation to check if input includes <blank> surrounded by words
+    const isValidFormat = /\b\w+\s*<blank>\s*\w+\b|\b\w+\s*<blank>\s*|\s*<blank>\s*\b\w+\b/.test(text);
+
+    if (!isValidFormat) {
+        suggestionsDiv.innerHTML = '<p class="loading">Please ensure the format is "word \< blank \> word".</p>';
+        moveCursorToEnd(inputField);
+        return;
+    }
+
+    suggestionsDiv.innerHTML = '<p class="loading">Loading suggestions...</p>';
+
+
     if (text.includes('<blank>')) {
         suggestionsDiv.innerHTML = '<p class="loading">Loading suggestions...</p>';
 

@@ -9,18 +9,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="/static/css/styles.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
     <!-- Main container for the form and suggestions -->
     <div class="container">
         <!-- Application title -->
+        <!-- <h1>Joy<span>Fill</span></h1> -->
+
         <h1>Joy<span>Fill</span></h1>
         <!-- Short description about the app -->
         <p class="description">Enhance your sentences with positive suggestions.</p>
 
-        <!-- Form for input and buttons -->
-        <form id="suggestion-form" onsubmit="return false;">
+        <!-- Add GitHub button here -->
+        <p class="github-link">
+            <a class="github-button" href="https://github.com/lkmeta/joyfill"
+                data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large"
+                aria-label="JoyFill on GitHub">JoyFill</a>
+        </p>
+
+
+        <!-- Short description about the app -->
+        <!-- <p class="description">Enhance your sentences with positive suggestions.</p> -->
+
+        <!-- Login Form -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-error" style="color: red; display: none;">Invalid credentials. Please try again.</p>
+        </div>
+
+        <!-- Form for input and buttons (hidden initially) -->
+        <form id="suggestion-form" style="display:none;" onsubmit="return false;">
             <div class="input-group">
                 <!-- Contenteditable div for the sentence -->
                 <div id="text-input" class="editable" contenteditable="true"

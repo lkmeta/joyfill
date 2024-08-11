@@ -33,7 +33,6 @@ h1 {
 
 h1 span {
     color: #1abc9c;
-    /* Accent color */
 }
 
 /* Description styling */
@@ -62,15 +61,10 @@ h1 span {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #2c3e50;
     min-height: 60px;
-    /* Increased height */
     max-height: 120px;
-    /* Set a maximum height */
     overflow-y: auto;
-    /* Add vertical scroll if content exceeds the box */
     white-space: pre-wrap;
-    /* Allows wrapping of the text */
     word-wrap: break-word;
-    /* Ensures long words will break and not overflow */
     outline: none;
 }
 
@@ -88,7 +82,6 @@ h1 span {
     flex-grow: 1;
     padding: 0.75rem;
     background-color: #1abc9c;
-    /* Accent color */
     color: white;
     border: none;
     border-radius: 6px;
@@ -131,17 +124,13 @@ h1 span {
 .suggestions span:hover {
     color: #1abc9c;
     border-bottom: 2px solid #1abc9c;
-    /* Underscore transition effect */
 }
 
 /* Styling for the inserted word */
 .highlighted {
     color: #e74c3c;
-    /* Different color for the inserted word */
     font-weight: 600;
-    /* Bold to stand out */
     background-color: #fce4ec;
-    /* Light background for emphasis */
     padding: 2px 4px;
     border-radius: 4px;
     display: inline-block;
@@ -150,7 +139,6 @@ h1 span {
 /* Loading text styling */
 .loading {
     color: #95a5a6;
-    /* Use a neutral color for loading text */
 }
 
 /* Error page link styling */
@@ -173,9 +161,69 @@ h1 span {
 .editable:empty:before {
     content: attr(data-placeholder);
     color: #bdc3c7;
-    /* Light gray color for the placeholder */
     pointer-events: none;
-    /* Prevent interaction with the placeholder */
     display: block;
-    /* Ensure the placeholder is visible even if the contenteditable is empty */
+}
+
+/* Login form styling */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#login-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #2c3e50;
+    box-sizing: border-box;
+}
+
+#login-form input:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+#login-form button {
+    width: 40%;
+    padding: 0.75rem;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+#login-form button:hover {
+    background-color: #16a085;
+}
+
+#login-form button:active {
+    transform: scale(0.98);
+}
+
+#login-error {
+    color: #e74c3c;
+    margin-top: 1rem;
+}
+
+/* Styling for the GitHub link */
+.github-link {
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
