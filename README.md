@@ -35,6 +35,10 @@
 
 JoyFill is a python web application designed to enhance sentences by providing positive suggestions using advanced NLP models. The application includes features like user authentication, containerized deployment with Docker, and is scalable with Kubernetes.
 
+<div align="center">
+  <img src="https://github.com/lkmeta/joyfill/blob/main/app/static/JoyFill%20Gif.gif" alt="JoyFill Gif" width="600"/>
+</div>
+
 ## Features
 
 - **Sentence Enhancement**: Enter a sentence with a `<blank>` placeholder, and JoyFill will provide positive suggestions to fill the blank using an NLP model.
